@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+                <h1><center class="auto-style2">Karate School</center></h1>
+                <center><asp:Image ID="Image1" runat="server" ImageUrl="~/pictures/xfcgvhb.JPG" />
+                &nbsp;&nbsp;<asp:Image ID="Image2" runat="server" ImageUrl="~/pictures/cnraebrnoj.JPG" />
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/pictures/rymudns.JPG" />
+                <asp:Image ID="Image4" runat="server" ImageUrl="~/pictures/xrdyctfvgybuhnijmok.JPG" />
+                <asp:Image ID="Image5" runat="server" ImageUrl="~/pictures/jn efivqwni.JPG" /></center>
+    </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
