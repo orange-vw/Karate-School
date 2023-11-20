@@ -68,10 +68,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\KarateSchool.mdf" />
-    <Content Include="App_Data\KarateSchool_log.ldf">
-      <DependentUpon>KarateSchool.mdf</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="pictures\cnraebrnoj.JPG" />
     <Content Include="pictures\jn efivqwni.JPG" />
@@ -90,18 +86,18 @@
       <DependentUpon>KarateSchool.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="websites\Administrator.aspx.cs">
+    <Compile Include="websites\AdministratorInfo\Administrator.aspx.cs">
       <DependentUpon>Administrator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="websites\Administrator.aspx.designer.cs">
+    <Compile Include="websites\AdministratorInfo\Administrator.aspx.designer.cs">
       <DependentUpon>Administrator.aspx</DependentUpon>
     </Compile>
-    <Compile Include="websites\Instructor.aspx.cs">
+    <Compile Include="websites\InstructorInfo\Instructor.aspx.cs">
       <DependentUpon>Instructor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="websites\Instructor.aspx.designer.cs">
+    <Compile Include="websites\InstructorInfo\Instructor.aspx.designer.cs">
       <DependentUpon>Instructor.aspx</DependentUpon>
     </Compile>
     <Compile Include="websites\Login.aspx.cs">
@@ -111,11 +107,11 @@
     <Compile Include="websites\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="websites\Member.aspx.cs">
+    <Compile Include="websites\MemberInfo\Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="websites\Member.aspx.designer.cs">
+    <Compile Include="websites\MemberInfo\Member.aspx.designer.cs">
       <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
     <Compile Include="websites\Site1.Master.cs">
@@ -136,10 +132,10 @@
       <DependentUpon>KarateSchool.dbml</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <Content Include="websites\Administrator.aspx" />
-    <Content Include="websites\Instructor.aspx" />
+    <Content Include="websites\AdministratorInfo\Administrator.aspx" />
+    <Content Include="websites\InstructorInfo\Instructor.aspx" />
     <Content Include="websites\Login.aspx" />
-    <Content Include="websites\Member.aspx" />
+    <Content Include="websites\MemberInfo\Member.aspx" />
     <Content Include="websites\Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -147,8 +143,30 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="websites\AdministratorInfo\Web.config" />
+    <None Include="websites\AdministratorInfo\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="websites\AdministratorInfo\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="websites\InstructorInfo\Web.config" />
+    <None Include="websites\InstructorInfo\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="websites\InstructorInfo\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="websites\MemberInfo\Web.config" />
+    <None Include="websites\MemberInfo\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="websites\MemberInfo\Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
