@@ -6,7 +6,7 @@
         <br />
     </p>
     <p>
-        <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
+        <asp:Login ID="Login1" runat="server">
         </asp:Login>
     </p>
     <p>
